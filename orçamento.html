@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer src="JS/contact.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="center-text" data-aos="fade-down">
+        <h2>Me fale sobre o seu <span>Projeto</span></h2>
+    </div>
+
+    <div class="contact-form-orç" data-aos="zoom-in" data-aos-delay="200">
+        <form action="https://api.staticforms.xyz/submit" method="post" class="contact-orç">
+            <div class="label-group">
+                <label for="objetivo">Objetivo do Site: <span class="tooltip"
+                        data-tooltip="Qual é o objetivo do site? Quem é o público-alvo? Que ação você deseja que os visitantes realizem?">ℹ️</span></label>
+                <input type="text" id="objetivo" name="message" required>
+
+                <label for="paleta_cores">Paleta de Cores Desejada: <span class="tooltip"
+                        data-tooltip="Informe suas preferências de cores, estilo de design, fontes e elementos visuais. Possui logotipo ou identidade de marca existente?">ℹ️</span></label>
+                <input type="text" id="paleta_cores" name="message" required>
+
+                <label for="funcionalidade_geral">Funcionalidades Desejadas: <span class="tooltip"
+                        data-tooltip="Quais recursos interativos você deseja, como formulários, galerias de imagens, slideshows, etc.? Necessita de um sistema de gerenciamento de conteúdo (CMS) para atualizar facilmente o site? Quais integrações são necessárias, como mídias sociais, sistemas de e-commerce, bancos de dados, etc.?">ℹ️</span></label>
+                <input type="text" id="funcionalidade_geral" name="message" required>
+
+                <label for="SEO">Otimização de Mecanismos de Busca (SEO): <span class="tooltip"
+                        data-tooltip="Deseja otimizar o site para mecanismos de busca, como Google e Bing? Informe as palavras-chave e metadados relevantes.">ℹ️</span></label>
+                <input type="text" id="SEO" name="message" required>
+
+                <label for="referência">Referências: <span class="tooltip"
+                        data-tooltip="Possui exemplos de sites ou landing pages que servem como referência para o projeto? Me manda o link do site por aqui">ℹ️</span></label>
+                <input type="text" id="referência" name="message">
+
+                <label for="prazo">Prazo desejado: <span class="tooltip"
+                        data-tooltip="Qual é o prazo desejado para a conclusão do projeto?">ℹ️</span></label>
+                <input type="text" id="prazo" name="message" required>
+            </div>
+
+            <fieldset>
+                <legend>Funcionalidades Alvo <span class="tooltip"
+                        data-tooltip="Escolha o tipo de funcionalidade desejado para o seu sistema.">ℹ️</span></legend>
+                <div class="radio-group">
+                    <label for="comercial" class="labelteste">Comercial</label>
+                    <input type="radio" id="comercial" name="message" value="comercial">
+
+                    <label for="divulgacao">Divulgação</label>
+                    <input type="radio" id="divulgacao" name="message" value="divulgacao">
+
+                    <label for="marketing">Marketing</label>
+                    <input type="radio" id="marketing" name="message" value="marketing">
+
+                    <label for="visual">Apenas Visual</label>
+                    <input type="radio" id="visual" name="message" value="visual">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Grupo de Serviços <span class="tooltip"
+                        data-tooltip="Escolha a opção de domínio e hospedagem.">ℹ️</span></legend>
+                <div class="radio-group">
+                    <label for="com_dominio_hospedagem">Com Domínio e Hospedagem</label>
+                    <input type="radio" id="com_dominio_hospedagem" name="message" value="com_dominio_hospedagem">
+
+                    <label for="sem_hospedagem">Sem Hospedagem</label>
+                    <input type="radio" id="sem_hospedagem" name="message" value="sem_hospedagem">
+                </div>
+            </fieldset>
+
+            <div class="email-orc"> <h1>Digite seu Nome e Email para Contato</h1>
+                <label for="objetivo"></label>
+                <input type="text" id="name" name="name" required placeholder="Seu Nome">
+
+                <label for="paleta_cores"></label>
+                <input type="text" id="email" name="email" required placeholder="Seu E-mail">
+            </div>
+
+
+
+
+
+
+
+            <button type="submit" class="send-btn-orç">Enviar Pedido</button>
+
+            <input type="hidden" name="accessKey" value="307f93be-7740-46de-962c-91d9c6ea5344">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+        </form>
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="JS/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
+
+</body>
+
+</html>
