@@ -1,3 +1,5 @@
+
+
 const header = document.querySelector("header");
 
 window.addEventListener("scroll",function(){
@@ -23,5 +25,6 @@ spans.forEach((span) => {
     span.style.width = span.dataset.width;
     span.innerHTML = span.dataset.width
 });
+
 
 
