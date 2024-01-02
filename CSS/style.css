@@ -358,9 +358,10 @@ header.sticky {
     background: var(--second-bg-color);
 }
 
-.Portfolio-content {
+.portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste a largura mínima conforme necessário */
+
     align-items: center;
     gap: 2.3rem;
     margin-top: 4.2rem;
@@ -368,10 +369,10 @@ header.sticky {
 
 .row img {
 
-    height: auto;
     width: 100%;
     border-radius: 28px;
     margin-bottom: 1.4rem;
+    object-fit: cover;
 }
 
 .row {
@@ -968,10 +969,6 @@ legend {
         --h2-font: 2rem;
     }
 
-    .row img{
-        height: 100%;
-        width: 100%;
-    }
 
     .about-img img {
         text-align: center;
@@ -1005,9 +1002,9 @@ legend {
         line-height: 35px;
     }
 
-    
 
-   
+
+
     
 }
 
